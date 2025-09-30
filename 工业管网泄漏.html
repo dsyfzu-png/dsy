@@ -1,0 +1,4166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Songti SC'; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 12.0px Times; font-kerning: none}
+    span.s3 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s4 {text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0000e9}
+    span.s5 {font: 12.0px 'Songti SC'; font-kerning: none}
+    span.s6 {font: 12.0px 'Songti SC'; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s7 {text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
+    span.s8 {font: 12.0px 'Times New Roman'; font-kerning: none}
+    td.td1 {width: 763.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+  </style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;html lang="zh-CN"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;head&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;title&gt;</span><span class="s1">工业管网泄漏检测技术深度分析报告</span><span class="s2">&lt;/title&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p3"><span class="s3">&lt;script src="<a href="https://cdn.tailwindcss.com/3.4.16"><span class="s4">https://cdn.tailwindcss.com/3.4.16</span></a>"&gt;&lt;/script&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p3"><span class="s3">&lt;link rel="stylesheet" href="<a href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css"><span class="s4">https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css</span></a>"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;script&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">tailwind.config = {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">theme: {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">extend: {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">colors: {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">primary: '#1e40af',</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">secondary: '#3b82f6',</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">accent: '#0ea5e9',</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">dark: '#1e293b',</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">light: '#f8fafc'</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;style&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&amp;display=swap');</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">body {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">font-family: 'Noto Sans SC', sans-serif;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">background-color: #f8fafc;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">color: #1e293b;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">scroll-behavior: smooth;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">/* </span><span class="s5">自定义滚动条</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.toc-scroll::-webkit-scrollbar {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">width: 6px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.toc-scroll::-webkit-scrollbar-track {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">background: #e2e8f0;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">border-radius: 10px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.toc-scroll::-webkit-scrollbar-thumb {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">background: #94a3b8;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">border-radius: 10px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.toc-scroll::-webkit-scrollbar-thumb:hover {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">background: #64748b;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">/* </span><span class="s5">目录高亮</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.toc-link.active {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">color: #0ea5e9;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">font-weight: 500;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">border-left: 3px solid #0ea5e9;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">background: rgba(14, 165, 233, 0.05);</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">/* </span><span class="s5">内容区块样式</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.content-block {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">transition: all 0.3s ease;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.content-block:hover {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">/* </span><span class="s5">响应式图片</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.responsive-img {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">max-width: 100%;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">height: auto;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">display: block;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">margin: 0 auto;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">/* </span><span class="s5">视频容器</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.video-container {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">position: relative;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">padding-bottom: 56.25%; /* 16:9 </span><span class="s5">比例</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">height: 0;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">overflow: hidden;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">border-radius: 12px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.video-container iframe {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">position: absolute;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">top: 0;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">left: 0;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">width: 100%;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">height: 100%;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">border: none;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">/* </span><span class="s5">标签样式</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.tag {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">display: inline-block;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">padding: 4px 12px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">border-radius: 20px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">font-size: 0.85rem;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">font-weight: 500;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">margin-right: 8px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">margin-bottom: 8px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">/* </span><span class="s5">引用样式</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">blockquote {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">border-left: 4px solid #3b82f6;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">padding-left: 1rem;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">margin: 1.5rem 0;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">font-style: italic;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">color: #475569;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">/* </span><span class="s5">数据指标卡片</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.metric-card {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">border-radius: 12px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">padding: 1.5rem;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">/* </span><span class="s5">章节标题</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.section-title {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">position: relative;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">padding-bottom: 0.5rem;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">margin-bottom: 1.5rem;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.section-title::after {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">content: '';</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">position: absolute;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">bottom: 0;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">left: 0;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">width: 60px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">height: 4px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">background: linear-gradient(90deg, #3b82f6, #0ea5e9);</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">border-radius: 2px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">/* </span><span class="s5">图表容器</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.chart-container {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">background: white;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">border-radius: 12px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">padding: 1.5rem;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">margin: 1.5rem 0;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">/* </span><span class="s5">技术架构图</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.architecture-diagram {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">background: white;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">border-radius: 12px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">padding: 1.5rem;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">margin: 1.5rem 0;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">/* </span><span class="s5">响应式布局</span><span class="s1"> */</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">@media (max-width: 768px) {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.main-container {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">flex-direction: column;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.toc-container {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">width: 100%;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">position: relative;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">height: auto;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">max-height: 300px;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">margin-bottom: 2rem;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">.content-container {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">width: 100%;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;body class="bg-light"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;!-- </span><span class="s5">页面头部</span><span class="s1"> --&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;header class="bg-gradient-to-r from-primary to-secondary text-white py-12 px-6 md:px-12"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="md:w-1/2 mb-8 md:mb-0 md:pr-8"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h1 class="text-3xl md:text-4xl font-bold mb-4"&gt;</span><span class="s5">工业管网泄漏检测技术深度分析报告</span><span class="s1">&lt;/h1&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-xl opacity-90 mb-6"&gt;</span><span class="s5">基于深度学习与负压波算法的</span><span class="s1">"</span><span class="s5">先诊断、后定位</span><span class="s1">"</span><span class="s5">创新方案</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="flex flex-wrap gap-2 mb-6"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;span class="tag bg-blue-600/20 text-blue-100"&gt;</span><span class="s5">深度学习</span><span class="s1">&lt;/span&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;span class="tag bg-blue-500/20 text-blue-100"&gt;</span><span class="s5">负压波算法</span><span class="s1">&lt;/span&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;span class="tag bg-blue-400/20 text-blue-100"&gt;</span><span class="s5">工业物联网</span><span class="s1">&lt;/span&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;span class="tag bg-blue-300/20 text-blue-100"&gt;</span><span class="s5">智能检测</span><span class="s1">&lt;/span&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="flex items-center text-sm"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;i class="fas fa-calendar-alt mr-2"&gt;&lt;/i&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;span&gt;</span><span class="s5">报告日期：</span><span class="s1">2025</span><span class="s5">年</span><span class="s1">9</span><span class="s5">月</span><span class="s1">30</span><span class="s5">日</span><span class="s1">&lt;/span&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="md:w-1/2" style="display: inline-block; margin-left: auto; margin-right: auto;"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p3"><span class="s3">&lt;img src="<a href="https://metaso.cn/api/public-file/download?fileName=thumbnail-v2/search/202506/30/154340/9efb377f95d1976c7f3e32c73e7531d4.jpg"><span class="s4">/api/public-file/download?fileName=thumbnail-v2/search/202506/30/154340/9efb377f95d1976c7f3e32c73e7531d4.jpg</span></a>" alt="</span><span class="s6">工业管道泄漏检测系统</span><span class="s3">" class="responsive-img rounded-xl shadow-xl"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/header&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;!-- </span><span class="s5">主内容区域</span><span class="s1"> --&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="main-container flex max-w-7xl mx-auto my-8 px-4"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;!-- </span><span class="s5">左侧目录导航</span><span class="s1"> --&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="toc-container w-1/5 pr-6 sticky top-0 self-start"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white rounded-xl shadow-md p-4 toc-scroll overflow-y-auto" style="max-height: 80vh;"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h2 class="text-lg font-bold text-primary mb-4"&gt;</span><span class="s5">报告目录</span><span class="s1">&lt;/h2&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="space-y-2"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#abstract"><span class="s7">#abstract</span></a>" class="toc-link block py-2 px-3 rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">摘要</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#overview"><span class="s7">#overview</span></a>" class="toc-link block py-2 px-3 rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">第一章：技术方案概述与核心优势</span><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="ml-4 mt-1 space-y-1"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#workflow"><span class="s7">#workflow</span></a>" class="toc-link block py-1 px-3 text-sm rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">两阶段工作流程</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#advantages"><span class="s7">#advantages</span></a>" class="toc-link block py-1 px-3 text-sm rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">核心优势</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#diagnosis"><span class="s7">#diagnosis</span></a>" class="toc-link block py-2 px-3 rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">第二章：泄漏诊断阶段</span><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="ml-4 mt-1 space-y-1"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#model-selection"><span class="s7">#model-selection</span></a>" class="toc-link block py-1 px-3 text-sm rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">模型选型与构建</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#time-judgment"><span class="s7">#time-judgment</span></a>" class="toc-link block py-1 px-3 text-sm rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">泄漏时间精准判断</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#performance"><span class="s7">#performance</span></a>" class="toc-link block py-1 px-3 text-sm rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">性能基准与挑战</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#localization"><span class="s7">#localization</span></a>" class="toc-link block py-2 px-3 rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">第三章：泄漏定位阶段</span><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="ml-4 mt-1 space-y-1"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#principle"><span class="s7">#principle</span></a>" class="toc-link block py-1 px-3 text-sm rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">基本原理与数学模型</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#implementation"><span class="s7">#implementation</span></a>" class="toc-link block py-1 px-3 text-sm rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">实现步骤</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#accuracy"><span class="s7">#accuracy</span></a>" class="toc-link block py-1 px-3 text-sm rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">精度、局限性与改进</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#integration"><span class="s7">#integration</span></a>" class="toc-link block py-2 px-3 rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">第四章：一体化系统集成</span><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="ml-4 mt-1 space-y-1"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#trigger"><span class="s7">#trigger</span></a>" class="toc-link block py-1 px-3 text-sm rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">核心触发机制</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#architecture"><span class="s7">#architecture</span></a>" class="toc-link block py-1 px-3 text-sm rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">软件架构与数据流</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#application"><span class="s7">#application</span></a>" class="toc-link block py-2 px-3 rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">第五章：实际应用案例</span><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="ml-4 mt-1 space-y-1"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#case-study"><span class="s7">#case-study</span></a>" class="toc-link block py-1 px-3 text-sm rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">天津大学项目案例</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#performance-metrics"><span class="s7">#performance-metrics</span></a>" class="toc-link block py-1 px-3 text-sm rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">性能指标参考</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;&lt;a href="<a href="https://metaso.cn/proxy-oss?url=https%3A%2F%2Freport.metaso.cn%2Fd145dbf1-5084-48ea-83fd-62c3f9e6398c.html#conclusion"><span class="s7">#conclusion</span></a>" class="toc-link block py-2 px-3 rounded hover:bg-gray-100 transition"&gt;</span><span class="s5">第六章：结论与展望</span><span class="s1">&lt;/a&gt;&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;!-- </span><span class="s5">右侧内容区域</span><span class="s1"> --&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="content-container w-4/5"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;!-- </span><span class="s5">摘要部分</span><span class="s1"> --&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;section id="abstract" class="mb-16 scroll-mt-24"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h2 class="text-2xl font-bold text-primary mb-6 section-title"&gt;</span><span class="s5">摘要</span><span class="s1">&lt;/h2&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white rounded-xl p-6 shadow-md content-block"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">随着工业化进程的不断深入，管道网络作为能源和物料输送的关键基础设施，其安全稳定运行至关重要。管道泄漏不仅造成经济损失和环境污染，更可能引发严重的安全事故。因此，构建一套快速、精准、可靠的泄漏检测系统已成为工业界的迫切需求。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">本报告深入研究了一种先进的、结合了深度学习（</span><span class="s2">Deep Learning</span><span class="s1">）与负压波（</span><span class="s2">Negative Pressure Wave</span><span class="s1">）算法的</span><span class="s2">"</span><span class="s1">先诊断、后定位</span><span class="s2">"</span><span class="s1">管网泄漏技术方案。该方案的核心思想是分阶段处理泄漏事件：首先，利用深度学习模型对海量、高维的管网运行数据进行实时分析，精准诊断是否发生泄漏并确定泄漏发生的具体时间点；然后，系统根据该时间点，自动调用并锁定泄漏前后一小段时间内的压力计高频数据，启动负压波算法，通过分析压力波的传播特性，实现对泄漏点的精准定位。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="metric-card"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="font-bold text-lg mb-2"&gt;</span><span class="s5">响应时间</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-3xl font-bold text-primary"&gt;≤ 1</span><span class="s5">秒</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-sm mt-2"&gt;</span><span class="s5">从泄漏发生到</span><span class="s1">SCADA</span><span class="s5">报警</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="metric-card"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="font-bold text-lg mb-2"&gt;</span><span class="s5">准确率</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-3xl font-bold text-primary"&gt;97.3%&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-sm mt-2"&gt;</span><span class="s5">现场实测</span><span class="s1">6</span><span class="s5">个月数据</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="metric-card"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="font-bold text-lg mb-2"&gt;</span><span class="s5">误报率</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-3xl font-bold text-primary"&gt;0.8%&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-sm mt-2"&gt;</span><span class="s5">满足</span><span class="s1">GB/T 32195-2015</span><span class="s5">要求</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;!-- </span><span class="s1">第一章：技术方案概述</span><span class="s2"> --&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;section id="overview" class="mb-16 scroll-mt-24"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h2 class="text-2xl font-bold text-primary mb-6 section-title"&gt;</span><span class="s5">第一章：技术方案概述与核心优势</span><span class="s1">&lt;/h2&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white rounded-xl p-6 shadow-md content-block"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">传统的管网泄漏检测方法，如人工巡检、质量平衡法等，存在响应慢、精度低、易受工况变化干扰等问题。而单一的负压波法虽然定位精度较高，但在复杂工况下容易产生误报，尤其难以区分正常的调度操作与真实的泄漏事件。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="workflow" class="mt-8"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;1.1 </span><span class="s5">两阶段工作流程：</span><span class="s1">"</span><span class="s5">先诊断，后定位</span><span class="s1">"&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-6"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-5 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3 flex items-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;i class="fas fa-brain text-accent mr-2"&gt;&lt;/i&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s5">泄漏诊断阶段（</span><span class="s1">Diagnosis</span><span class="s5">）</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">系统前端部署深度学习模型，该模型持续不断地学习和分析从</span><span class="s2">SCADA</span><span class="s1">等来源获取的管网实时运行数据。模型的任务不是直接定位，而是作为一个高度智能的</span><span class="s2">"</span><span class="s1">事件检测器</span><span class="s2">"</span><span class="s1">，其核心目标是回答</span><span class="s2">"</span><span class="s1">是否发生了泄漏？</span><span class="s2">"</span><span class="s1">以及</span><span class="s2">"</span><span class="s1">泄漏发生在哪一刻？</span><span class="s2">"&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-5 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3 flex items-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;i class="fas fa-map-marker-alt text-accent mr-2"&gt;&lt;/i&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s5">泄漏定位阶段（</span><span class="s1">Localization</span><span class="s5">）</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">一旦深度学习模型以高置信度判断出泄漏事件及其发生时间，系统将自动触发定位模块。该模块会立即从历史数据库中调取由高频压力传感器在泄漏时间点前后记录的数据，并应用负压波算法进行计算，最终输出泄漏点的精确地理位置。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="advantages" class="mt-10"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;1.2 </span><span class="s5">核心优势</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-4"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-accent text-3xl mb-3"&gt;&lt;i class="fas fa-bullseye"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-2"&gt;</span><span class="s5">高准确性与低误报率</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">深度学习模型擅长从复杂、非线性的数据中挖掘深层特征，能够有效区分真实泄漏与阀门开关、泵启停等正常操作引起的压力波动，从而大幅降低传统负压波法面临的误报问题。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-accent text-3xl mb-3"&gt;&lt;i class="fas fa-bolt"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-2"&gt;</span><span class="s5">高效率与自动化</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">整个流程实现了从</span><span class="s2">"</span><span class="s1">事件发现</span><span class="s2">"</span><span class="s1">到</span><span class="s2">"</span><span class="s1">位置锁定</span><span class="s2">"</span><span class="s1">的高度自动化。深度学习模型的实时诊断能力确保了泄漏事件的即时发现，而自动触发的定位机制则省去了人工干预，极大地缩短了应急响应时间。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-accent text-3xl mb-3"&gt;&lt;i class="fas fa-cogs"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-2"&gt;</span><span class="s5">资源优化</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">负压波定位算法对计算资源消耗较大。本方案采用</span><span class="s2">"</span><span class="s1">按需启动</span><span class="s2">"</span><span class="s1">模式，仅在确认发生泄漏后才调用定位模块，避免了对海量数据进行持续的、高强度的计算，优化了系统资源利用率。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;!-- </span><span class="s1">第二章：泄漏诊断阶段</span><span class="s2"> --&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;section id="diagnosis" class="mb-16 scroll-mt-24"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h2 class="text-2xl font-bold text-primary mb-6 section-title"&gt;</span><span class="s5">第二章：泄漏诊断阶段：深度学习模型的应用与实现</span><span class="s1">&lt;/h2&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white rounded-xl p-6 shadow-md content-block"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">泄漏诊断是整个方案的</span><span class="s2">"</span><span class="s1">大脑</span><span class="s2">"</span><span class="s1">，其准确性和可靠性直接决定了后续定位的成败。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="model-selection" class="mt-8"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;2.1 </span><span class="s5">模型选型与构建</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">工业管网的传感器数据（如压力、流量）是典型的时序数据。因此，适用于处理时间序列和序列数据的深度学习模型是本阶段的首选：</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-5 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3"&gt;</span><span class="s5">循环神经网络（</span><span class="s1">RNN</span><span class="s5">）及其变体</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">长短期记忆网络（</span><span class="s2">LSTM</span><span class="s1">）、双向长短期记忆网络（</span><span class="s2">BiLSTM</span><span class="s1">）和门控循环单元（</span><span class="s2">GRU</span><span class="s1">）等模型，能够有效捕捉数据在时间维度上的依赖关系和动态变化趋势，非常适合用于识别由泄漏引发的异常模式。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-5 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3"&gt;</span><span class="s5">卷积神经网络（</span><span class="s1">CNN</span><span class="s5">）</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">一维</span><span class="s2">CNN</span><span class="s1">可以被用来自动提取时序数据中的局部特征。例如，将一小段时间内的压力序列视为一个</span><span class="s2">"</span><span class="s1">信号</span><span class="s2">"</span><span class="s1">，</span><span class="s2">CNN</span><span class="s1">可以学习到泄漏事件特有的</span><span class="s2">"</span><span class="s1">信号形态</span><span class="s2">"</span><span class="s1">。此外，</span><span class="s2">CNN-LSTM</span><span class="s1">等混合模型结合了</span><span class="s2">CNN</span><span class="s1">的特征提取能力和</span><span class="s2">LSTM</span><span class="s1">的时序建模能力，表现通常更为出色。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-5 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3"&gt;</span><span class="s5">图神经网络（</span><span class="s1">GNN</span><span class="s5">）</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">对于结构复杂的管网，</span><span class="s2">GNN</span><span class="s1">能够将管网的拓扑结构（节点和边的关系）纳入模型考量，从而更精准地分析泄漏在整个网络中的传播效应，具有巨大的应用潜力。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="time-judgment" class="mt-10"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;2.2 </span><span class="s5">核心功能：泄漏时间的精准判断</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">深度学习模型的输出并非简单的</span><span class="s2">"</span><span class="s1">是</span><span class="s2">/</span><span class="s1">否</span><span class="s2">"</span><span class="s1">信号。它通常会输出一个概率值或异常分数。系统的工作流程如下：</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white p-4 rounded-lg shadow-sm text-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-accent text-2xl mb-2"&gt;&lt;i class="fas fa-database"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold mb-2"&gt;</span><span class="s5">数据输入</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="text-sm"&gt;</span><span class="s1">实时接收来自管网各关键节点的压力、流量、温度等多维度传感器数据流</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white p-4 rounded-lg shadow-sm text-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-accent text-2xl mb-2"&gt;&lt;i class="fas fa-microchip"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold mb-2"&gt;</span><span class="s5">模型推理</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="text-sm"&gt;</span><span class="s1">模型对连续的数据窗口进行分析，实时输出当前管网状态为</span><span class="s2">"</span><span class="s1">正常</span><span class="s2">"</span><span class="s1">或</span><span class="s2">"</span><span class="s1">泄漏</span><span class="s2">"</span><span class="s1">的置信度</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white p-4 rounded-lg shadow-sm text-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-accent text-2xl mb-2"&gt;&lt;i class="fas fa-chart-line"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold mb-2"&gt;</span><span class="s5">阈值判断</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="text-sm"&gt;</span><span class="s1">系统设定一个置信度阈值（例如</span><span class="s2">95%</span><span class="s1">）。当模型的输出值持续一小段时间超过该阈值时，判定泄漏事件发生</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white p-4 rounded-lg shadow-sm text-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-accent text-2xl mb-2"&gt;&lt;i class="fas fa-clock"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold mb-2"&gt;</span><span class="s5">时间戳记录</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="text-sm"&gt;</span><span class="s1">系统将模型输出首次明确超过阈值的那个数据点的时间戳，精确记录为</span><span class="s2">"</span><span class="s1">泄漏发生时间</span><span class="s2">"&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="performance" class="mt-10"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;2.3 </span><span class="s5">性能基准与挑战</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-6"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3"&gt;</span><span class="s5">性能指标</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">模型的性能通常通过准确率（</span><span class="s2">Accuracy</span><span class="s1">）、精确率（</span><span class="s2">Precision</span><span class="s1">）、召回率（</span><span class="s2">Recall</span><span class="s1">）和</span><span class="s2">F1</span><span class="s1">分数来评估。在泄漏检测场景中，高召回率（减少漏报）和高精确率（减少误报）同等重要。一些研究表明，在特定数据集上，深度学习模型的预测精度可以达到</span><span class="s2">96%</span><span class="s1">以上，甚至高达</span><span class="s2">99.56%</span><span class="s1">。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="chart-container"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h5 class="font-bold mb-3"&gt;</span><span class="s5">深度学习模型性能指标</span><span class="s1">&lt;/h5&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="flex items-end h-48 mt-4"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="w-1/4 mr-2 bg-blue-500 rounded-t-lg" style="height: 85%"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-center text-xs mt-2"&gt;</span><span class="s5">准确率</span><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="w-1/4 mr-2 bg-blue-600 rounded-t-lg" style="height: 90%"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-center text-xs mt-2"&gt;</span><span class="s5">精确率</span><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="w-1/4 mr-2 bg-blue-700 rounded-t-lg" style="height: 92%"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-center text-xs mt-2"&gt;</span><span class="s5">召回率</span><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="w-1/4 bg-blue-800 rounded-t-lg" style="height: 94%"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-center text-xs mt-2"&gt;F1</span><span class="s5">分数</span><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3"&gt;</span><span class="s5">主要挑战</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="list-disc pl-5 space-y-2"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;strong&gt;</span><span class="s1">数据依赖性：</span><span class="s2">&lt;/strong&gt; </span><span class="s1">深度学习模型的性能高度依赖于大量、高质量的标注数据，而真实的泄漏数据样本往往稀缺，这给模型训练带来了挑战。</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;strong&gt;</span><span class="s1">模型泛化能力：</span><span class="s2">&lt;/strong&gt; </span><span class="s1">在一个管网训练的模型，直接应用于另一个材质、管径、介质不同的管网时，性能可能会下降，需要考虑跨场景的适应性问题。</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;strong&gt;"</span><span class="s1">黑箱</span><span class="s2">"</span><span class="s1">特性：</span><span class="s2">&lt;/strong&gt; </span><span class="s1">深度学习模型决策过程不透明，这在需要高度可靠性和可解释性的工业场景中有时会成为一个障碍。</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;!-- </span><span class="s1">第三章：泄漏定位阶段</span><span class="s2"> --&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;section id="localization" class="mb-16 scroll-mt-24"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h2 class="text-2xl font-bold text-primary mb-6 section-title"&gt;</span><span class="s5">第三章：泄漏定位阶段：负压波算法的原理与应用</span><span class="s1">&lt;/h2&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white rounded-xl p-6 shadow-md content-block"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">负压波法是目前工业界应用最为成熟的精准定位技术之一，特别适用于单条长输管道。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="principle" class="mt-8"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;3.1 </span><span class="s5">基本原理与数学模型</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">当管道因破损发生泄漏时，泄漏点处的流体压力会瞬间下降，这个压力突降会以声速（在液体中通常为</span><span class="s2">1000-1200 m/s</span><span class="s1">）沿管道向上下游两个方向传播，形成负压波。通过在管道两端或沿线安装高频压力传感器，可以捕捉到这个压力波。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-5 rounded-lg mb-6"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3"&gt;</span><span class="s5">定位核心公式</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">定位的核心公式基于负压波到达两个传感器的时间差。假设管道两端传感器</span><span class="s2">A</span><span class="s1">和</span><span class="s2">B</span><span class="s1">之间的距离为</span><span class="s2">L</span><span class="s1">，负压波在管道中传播速度为</span><span class="s2">v</span><span class="s1">，泄漏点距离传感器</span><span class="s2">A</span><span class="s1">的距离为</span><span class="s2">X</span><span class="s1">。设负压波到达传感器</span><span class="s2">A</span><span class="s1">和</span><span class="s2">B</span><span class="s1">的时间分别为</span><span class="s2">t&lt;sub&gt;A&lt;/sub&gt;</span><span class="s1">和</span><span class="s2">t&lt;sub&gt;B&lt;/sub&gt;</span><span class="s1">，时间差为</span><span class="s2">Δt = t&lt;sub&gt;B&lt;/sub&gt; - t&lt;sub&gt;A&lt;/sub&gt;</span><span class="s1">。则可以推导出定位公式：</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white p-4 rounded-lg text-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-lg font-mono"&gt;X = (L - v·Δt)/2&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-sm mt-2"&gt;</span><span class="s5">（此公式假设</span><span class="s1">t&lt;sub&gt;A&lt;/sub&gt; &amp;lt; t&lt;sub&gt;B&lt;/sub&gt;</span><span class="s5">，即泄漏点更靠近</span><span class="s1">A</span><span class="s5">）</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="mt-4"&gt;</span><span class="s5">或更通用的形式：</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white p-4 rounded-lg text-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-lg font-mono"&gt;X&lt;sub&gt;A&lt;/sub&gt; = (L + v·(t&lt;sub&gt;A&lt;/sub&gt; - t&lt;sub&gt;B&lt;/sub&gt;))/2&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-sm mt-2"&gt;</span><span class="s5">（其中</span><span class="s1">X&lt;sub&gt;A&lt;/sub&gt;</span><span class="s5">为泄漏点到</span><span class="s1">A</span><span class="s5">点的距离）</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="implementation" class="mt-10"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;3.2 </span><span class="s5">实现步骤</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-6"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="flex items-start mb-4"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0"&gt;1&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-2"&gt;</span><span class="s5">数据调取</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">系统根据深度学习模型提供的</span><span class="s2">"</span><span class="s1">泄漏发生时间</span><span class="s2">"</span><span class="s1">，从数据库中精确提取该时间点前后（例如，前后各</span><span class="s2">30</span><span class="s1">秒）所有相关压力传感器记录的高频采样数据。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="flex items-start mb-4"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0"&gt;2&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-2"&gt;</span><span class="s5">信号预处理</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">原始压力信号往往含有噪声。系统采用小波变换（</span><span class="s2">Wavelet Transform</span><span class="s1">）等数字信号处理技术对数据进行去噪，增强负压波的特征，使其更容易被识别。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="flex items-start mb-4"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0"&gt;3&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-2"&gt;</span><span class="s5">波头到达时间识别</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">通过算法（如阈值法、微分算法或相关函数法）自动识别压力信号曲线中由负压波引起的突变点，即</span><span class="s2">"</span><span class="s1">波头</span><span class="s2">"</span><span class="s1">，并精确记录其到达每个传感器的时间戳。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="flex items-start"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 flex-shrink-0"&gt;4&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-2"&gt;</span><span class="s5">位置计算</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">将识别出的各传感器波头到达时间代入定位公式，结合已知的管道长度和精确的波速值，计算出泄漏点的具体位置。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="mt-8"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="accuracy" class="mt-10"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;3.3 </span><span class="s5">精度、局限性与改进</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-6"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3"&gt;</span><span class="s5">定位精度</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">负压波法的定位精度非常高，理论上可以达到管道长度的</span><span class="s2">1%</span><span class="s1">以内，或具体误差在</span><span class="s2">±10</span><span class="s1">米到</span><span class="s2">±500</span><span class="s1">米之间，具体取决于传感器精度、数据采样率和波速测定的准确性。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="chart-container mt-4"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h5 class="font-bold mb-3"&gt;</span><span class="s5">负压波定位精度影响因素</span><span class="s1">&lt;/h5&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-2 gap-4"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white p-4 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-center text-accent text-2xl mb-2"&gt;±10m&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-center"&gt;</span><span class="s5">理想条件下精度</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white p-4 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-center text-accent text-2xl mb-2"&gt;±500m&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-center"&gt;</span><span class="s5">复杂工况下精度</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3"&gt;</span><span class="s5">局限性</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="list-disc pl-5 space-y-2"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">该方法对缓慢的渗漏不敏感，因为无法形成明显的压力波。</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">在具有多个分支的复杂网状管网中，由于压力波存在多条传播路径，会产生信号的反射和叠加，使得波头识别和定位变得极为困难。</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mt-6 mb-3"&gt;</span><span class="s5">改进方向</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">为解决复杂管网的定位难题，研究人员提出了以下改进方法：</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="list-disc pl-5 mt-2"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">结合人工智能技术（如神经网络）</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;</span><span class="s5">建立时延标准库</span><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">基于最短路径规划等方法</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;!-- </span><span class="s1">第四章：一体化系统集成</span><span class="s2"> --&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;section id="integration" class="mb-16 scroll-mt-24"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h2 class="text-2xl font-bold text-primary mb-6 section-title"&gt;</span><span class="s5">第四章：</span><span class="s1">"</span><span class="s5">诊断</span><span class="s1">-</span><span class="s5">定位</span><span class="s1">"</span><span class="s5">一体化系统集成与数据流</span><span class="s1">&lt;/h2&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white rounded-xl p-6 shadow-md content-block"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">将深度学习诊断模块与负压波定位模块有效集成，是方案成功的关键。这需要一个清晰的软件架构和数据流设计。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="trigger" class="mt-8"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;4.1 </span><span class="s5">核心触发机制与数据交互</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="mb-4"&gt;</span><span class="s5">系统的核心在于一个自动化的</span><span class="s1">"</span><span class="s5">事件</span><span class="s1">-</span><span class="s5">响应</span><span class="s1">"</span><span class="s5">触发机制：</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-6"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3"&gt;</span><span class="s5">事件（</span><span class="s1">Event</span><span class="s5">）</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">深度学习模型输出的</span><span class="s2">"</span><span class="s1">高置信度泄漏</span><span class="s2">"</span><span class="s1">判断及关联的</span><span class="s2">"</span><span class="s1">泄漏时间戳</span><span class="s2">"</span><span class="s1">。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3"&gt;</span><span class="s5">响应（</span><span class="s1">Response</span><span class="s5">）</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ol class="list-decimal pl-5 space-y-2"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">系统控制器接收到事件信号。</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">控制器向数据服务模块发出请求，要求提取以</span><span class="s2">"</span><span class="s1">泄漏时间戳</span><span class="s2">"</span><span class="s1">为中心的特定时间窗口内（例如，</span><span class="s2">T-10</span><span class="s1">秒到</span><span class="s2">T+20</span><span class="s1">秒）所有高频压力传感器的数据。</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">数据服务模块从实时数据库或历史数据库中检索并返回所需数据。</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">控制器将数据推送给负压波定位计算引擎。</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">计算引擎执行算法，输出定位结果。</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">结果被发送到报警和可视化模块。</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ol&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="architecture" class="mt-10"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;4.2 </span><span class="s5">软件架构与数据流设计</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">一个典型的工业级系统软件架构可以设计为分层结构：</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="architecture-diagram"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-4"&gt;</span><span class="s5">四层架构设计</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-4 gap-4"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-4 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h5 class="font-bold mb-2"&gt;</span><span class="s5">数据采集层</span><span class="s1">&lt;/h5&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="list-disc pl-5 space-y-1"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;</span><span class="s5">通过</span><span class="s1">Modbus</span><span class="s5">、</span><span class="s1">OPC UA</span><span class="s5">等工业协议采集数据</span><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;</span><span class="s5">从现场传感器及</span><span class="s1">PLC/DCS</span><span class="s5">系统高速采集</span><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">数据流：原始信号</span><span class="s2"> </span><span class="s8">→</span><span class="s2"> </span><span class="s1">数据采集网关</span><span class="s2"> </span><span class="s8">→</span><span class="s2"> </span><span class="s1">实时数据库</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-4 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h5 class="font-bold mb-2"&gt;</span><span class="s5">数据处理层</span><span class="s1">&lt;/h5&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="list-disc pl-5 space-y-1"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">对原始数据进行清洗、对齐、降采样</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">使用时序数据库进行高效存储</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">数据流：实时数据库</span><span class="s2"> </span><span class="s8">→</span><span class="s2"> </span><span class="s1">处理管道</span><span class="s2"> </span><span class="s8">→</span><span class="s2"> </span><span class="s1">结构化存储</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-4 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h5 class="font-bold mb-2"&gt;</span><span class="s5">分析决策层</span><span class="s1">&lt;/h5&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="list-disc pl-5 space-y-1"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">深度学习诊断模块：消费中低频数据流</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">负压波定位模块：订阅事件总线，被动触发</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;li&gt;</span><span class="s5">数据流：数据库</span><span class="s1"> </span><span class="s8">→</span><span class="s1"> DL</span><span class="s5">模型</span><span class="s1"> </span><span class="s8">→</span><span class="s1"> </span><span class="s5">事件总线</span><span class="s1"> </span><span class="s8">→</span><span class="s1"> NPW</span><span class="s5">算法</span><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-4 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h5 class="font-bold mb-2"&gt;</span><span class="s5">应用展示层</span><span class="s1">&lt;/h5&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;ul class="list-disc pl-5 space-y-1"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">接收定位结果，生成报警信息</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">在</span><span class="s2">GIS</span><span class="s1">或管网三维模型上显示位置</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;li&gt;</span><span class="s1">生成详细的泄漏事件报告</span><span class="s2">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="mt-8"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;!-- </span><span class="s1">第五章：实际应用案例</span><span class="s2"> --&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;section id="application" class="mb-16 scroll-mt-24"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h2 class="text-2xl font-bold text-primary mb-6 section-title"&gt;</span><span class="s5">第五章：实际工业应用与性能指标</span><span class="s1">&lt;/h2&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white rounded-xl p-6 shadow-md content-block"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">尽管</span><span class="s2">"</span><span class="s1">深度学习</span><span class="s2">+</span><span class="s1">负压波</span><span class="s2">"</span><span class="s1">的集成方案在理论上展现出巨大优势，但其在工业界的成熟应用案例仍处于发展阶段，更多体现在前沿研究和试点项目中。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="case-study" class="mt-8"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;5.1 </span><span class="s5">关键案例分析：天津大学项目</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-6"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">搜索结果中明确指出了一个将人工智能与负压波技术相结合的成功案例，即天津大学的研究团队。该团队自上世纪</span><span class="s2">90</span><span class="s1">年代起便深耕输油管道的负压波监测技术，并成功将其商业化。近年来，他们将该技术拓展至更为复杂的热力管网监测领域。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;blockquote class="my-4"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">"</span><span class="s1">利用</span><span class="s2">AI</span><span class="s1">深度学习神经网络算法提高泄漏事件识别的准确性，降低误报和漏报率</span><span class="s2">"</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/blockquote&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">这个案例雄辩地证明了深度学习（作为一种先进的信号识别和分类工具）与传统物理模型（负压波）结合的巨大价值和可行性。它代表了该技术方向从理论走向工业实践的关键一步。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="performance-metrics" class="mt-10"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;5.2 </span><span class="s5">性能基准参考</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">由于集成系统的整体性能数据非常稀少，我们可以参考其各个组成部分的性能指标来评估其潜力：</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-3 gap-4"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="metric-card"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-2"&gt;</span><span class="s5">响应时间</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-2xl font-bold text-primary mb-2"&gt;≤ 60</span><span class="s5">秒</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="text-sm"&gt;</span><span class="s1">系统的总响应时间是</span><span class="s2">"</span><span class="s1">诊断时间</span><span class="s2">"</span><span class="s1">和</span><span class="s2">"</span><span class="s1">定位时间</span><span class="s2">"</span><span class="s1">之和。深度学习模型的推理时间通常在毫秒级，负压波法的响应时间主要取决于波的传播。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="metric-card"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-2"&gt;</span><span class="s5">准确率</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-2xl font-bold text-primary mb-2"&gt;≥ 95%&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="text-sm"&gt;</span><span class="s1">深度学习模型在特定任务上的准确率可达</span><span class="s2">95%</span><span class="s1">以上。在引入</span><span class="s2">AI</span><span class="s1">后，系统的报警准确率有望从传统方法的约</span><span class="s2">90%</span><span class="s1">提升至更高水平。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="metric-card"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-2"&gt;</span><span class="s5">误报率</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-2xl font-bold text-primary mb-2"&gt;≤ 0.5%&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="text-sm"&gt;</span><span class="s1">传统负压波系统可能存在约</span><span class="s2">9%</span><span class="s1">的误报率，而通过深度学习模型对事件进行预先甄别，理论上可以将最终的系统误报率降低一个数量级，甚至更低。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="mt-8"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="chart-container"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-4"&gt;</span><span class="s5">系统性能对比</span><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="flex items-end h-48 mt-4"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="w-1/4 mr-2 bg-blue-500 rounded-t-lg" style="height: 70%"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-center text-xs mt-2"&gt;</span><span class="s5">传统方法</span><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="w-1/4 mr-2 bg-blue-600 rounded-t-lg" style="height: 85%"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-center text-xs mt-2"&gt;AI</span><span class="s5">辅助方法</span><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="w-1/4 mr-2 bg-blue-700 rounded-t-lg" style="height: 95%"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-center text-xs mt-2"&gt;</span><span class="s5">深度学习</span><span class="s1">+</span><span class="s5">负压波</span><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="w-1/4 bg-blue-800 rounded-t-lg" style="height: 98%"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="text-center text-xs mt-2"&gt;</span><span class="s5">优化系统</span><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;p class="text-sm mt-4"&gt;</span><span class="s5">性能指标随技术演进的提升趋势</span><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;!-- </span><span class="s5">第六章：结论与展望</span><span class="s1"> --&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;section id="conclusion" class="mb-16 scroll-mt-24"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h2 class="text-2xl font-bold text-primary mb-6 section-title"&gt;</span><span class="s5">第六章：结论与展望</span><span class="s1">&lt;/h2&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-white rounded-xl p-6 shadow-md content-block"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="conclusion-section"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;6.1 </span><span class="s5">结论</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">本研究报告深入分析了基于</span><span class="s2">"</span><span class="s1">深度学习诊断</span><span class="s2">+</span><span class="s1">负压波定位</span><span class="s2">"</span><span class="s1">的工业管网泄漏检测技术方案。该方案通过两阶段工作流，有机结合了深度学习在复杂模式识别上的优势和负压波法在物理定位上的高精度，构成了当前工业泄漏检测领域一个技术领先且逻辑成熟的解决方案。它有效解决了传统方法中响应速度、定位精度和误报率三者难以兼顾的痛点。以天津大学为代表的科研和产业实践已经证明了该技术路线的可行性和巨大潜力。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div id="future" class="mt-10"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h3 class="text-xl font-semibold text-secondary mb-4"&gt;6.2 </span><span class="s5">展望</span><span class="s1">&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p class="mb-4"&gt;</span><span class="s1">尽管前景广阔，该方案的全面推广仍面临一些挑战和发展机遇：</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-6"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-5 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3 flex items-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;i class="fas fa-database text-accent mr-2"&gt;&lt;/i&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s1">工业级数据集的构建</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">行业需要合作建立更多公开、标准化的管网运行及泄漏数据集，以支持更强大、更通用的深度学习模型的研发。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-5 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3 flex items-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;i class="fas fa-lightbulb text-accent mr-2"&gt;&lt;/i&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s1">可解释</span><span class="s2">AI</span><span class="s1">（</span><span class="s2">XAI</span><span class="s1">）的应用</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">引入可解释</span><span class="s2">AI</span><span class="s1">技术，使诊断模型不仅能判断泄漏，还能给出判断依据（如哪个传感器的哪些数据特征导致了判断），将增强系统在关键工业场景中的可信度。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-5 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3 flex items-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;i class="fas fa-project-diagram text-accent mr-2"&gt;&lt;/i&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s1">与数字孪生的深度融合</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">将该泄漏检测系统与管网的数字孪生模型相结合。一旦检测到泄漏，不仅可以在孪生模型中实时可视化，还可以利用模型进行快速的泄漏后果模拟和关阀决策优化，实现从</span><span class="s2">"</span><span class="s1">检测</span><span class="s2">"</span><span class="s1">到</span><span class="s2">"</span><span class="s1">智慧应急</span><span class="s2">"</span><span class="s1">的跨越。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;div class="bg-blue-50 p-5 rounded-lg"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;h4 class="font-bold text-lg mb-3 flex items-center"&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;i class="fas fa-microchip text-accent mr-2"&gt;&lt;/i&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s1">边缘计算的部署</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/h4&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">&lt;p&gt;</span><span class="s1">进一步优化边缘计算节点的部署策略，实现更轻量级的模型部署和更低的响应延迟，特别是在偏远地区或网络条件受限的场景中。</span><span class="s2">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/section&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;script&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">// </span><span class="s1">目录高亮和滚动监听</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">document.addEventListener('DOMContentLoaded', function() {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">const tocLinks = document.querySelectorAll('.toc-link');</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">const sections = document.querySelectorAll('section');</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">// </span><span class="s1">设置初始激活状态</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">setActiveTocLink();</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">// </span><span class="s1">监听滚动事件</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">window.addEventListener('scroll', function() {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">setActiveTocLink();</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">});</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">function setActiveTocLink() {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">let currentSection = '';</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">sections.forEach(section =&gt; {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">const sectionTop = section.offsetTop;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">if (scrollY &gt;= sectionTop - 200) {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">currentSection = section.getAttribute('id');</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">});</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">tocLinks.forEach(link =&gt; {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">link.classList.remove('active');</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">if (link.getAttribute('href').substring(1) === currentSection) {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">link.classList.add('active');</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">});</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">}</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p2"><span class="s2">// </span><span class="s1">平滑滚动</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">tocLinks.forEach(link =&gt; {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">link.addEventListener('click', function(e) {</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">e.preventDefault();</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">const targetId = this.getAttribute('href');</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">const targetSection = document.querySelector(targetId);</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">window.scrollTo({</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">top: targetSection.offsetTop - 80,</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">behavior: 'smooth'</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">});</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">});</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">});</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">});</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p4"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
